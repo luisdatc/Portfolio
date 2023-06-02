@@ -1,0 +1,59 @@
+import { useState } from "react";
+import "./Certifications.scss";
+import { Col, Container, Row } from "react-bootstrap";
+
+const Certifications = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  return (
+    <Container>
+      <Row>
+        <Col xs={12} s={12} md={9} lg={9} xl={9} className="">
+          {selectedImage ? (
+            <img src={selectedImage} alt="" className="img-fluid" />
+          ) : (
+            <h3>Seleccione un certificado para verlo</h3>
+          )}
+        </Col>
+        <Col xs={12} s={12} md={3} lg={3} xl={3} className="d-flex flex-column">
+          <Row>
+            <Col xs={4} s={4} md={4} lg={10} xl={10}>
+              <img
+                src="/DesarrolloWeb.png"
+                alt=""
+                className="img-fluid"
+                onClick={() => handleClick("/DesarrolloWeb.png")}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={4} s={4} md={4} lg={10} xl={10}>
+              <img
+                src="/Javascript.png"
+                alt=""
+                className="img-fluid"
+                onClick={() => handleClick("/Javascript.png")}
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={4} s={4} md={4} lg={10} xl={10}>
+              <img
+                src="/ReactJS.png"
+                alt=""
+                className="img-fluid"
+                onClick={() => handleClick("/ReactJS.png")}
+              />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default Certifications;

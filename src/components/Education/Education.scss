@@ -1,0 +1,51 @@
+.aboutMe-grid {
+  display: grid;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box5"
+    "box6 box7"
+    "box8 box9"
+    "box10 box11"
+    "box12 box12";
+
+  &-box {
+    height: 300px;
+    &-1 {
+      grid-area: box1;
+    }
+    &-2 {
+      grid-area: box2;
+    }
+    &-3 {
+      grid-area: box3;
+    }
+    &-4 {
+      grid-area: box4;
+    }
+    &-5 {
+      grid-area: box5;
+    }
+    &-6 {
+      grid-area: box6;
+    }
+    &-7 {
+      grid-area: box7;
+    }
+    &-8 {
+      grid-area: box8;
+    }
+    &-9 {
+      grid-area: box9;
+    }
+    &-10 {
+      grid-area: box10;
+    }
+    &-11 {
+      grid-area: box11;
+    }
+    &-12 {
+      grid-area: box12;
+    }
+  }
+}
