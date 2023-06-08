@@ -10,7 +10,7 @@ import "./Education.scss";
 
 const Education = () => {
   return (
-    <section>
+    <section id="education">
       <Container className="aboutMe-grid">
         <div className="aboutMe-grid-box-1">
           <div className="d-flex flex-column align-items-center">

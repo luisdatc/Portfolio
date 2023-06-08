@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div id="about">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
       adipisci fuga, autem ab expedita quisquam culpa delectus quis quos
       voluptatibus minus eius pariatur accusantium. Dolore qui eius quae tenetur

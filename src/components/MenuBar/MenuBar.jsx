@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./MenuBar.scss";
+import { Link } from "react-router-dom";
 
 const MenuBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,11 +33,12 @@ const MenuBar = () => {
   };
 
   return (
-    <header className="header">
+    <header className="header sticky-top">
       <div className="header--content">
-        <a href="" className="header--content--logo">
-          Luis Torres Portfolio
-        </a>
+        <Link to="/" className="header--content--logo">
+          <span>Luis Torres Portfolio</span>
+        </Link>
+
         <nav
           className={`${"header--content--nav"} 
           ${menuOpen && size.width < 768 ? `${"isMenu"}` : ""} 
@@ -44,16 +46,25 @@ const MenuBar = () => {
         >
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <a href="">Profile</a>
+              <a href="#about">About Me</a>
             </li>
             <li>
-              <a href="">Browse Works</a>
+              <a href="#education">Educacion</a>
             </li>
             <li>
-              <a href="">Help</a>
+              <a href="#technologies">Tecnologias</a>
+            </li>
+            <li>
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li>
+              <a href="#certificados">Certificados</a>
+            </li>
+            <li>
+              <a href="#contacto">Contacto</a>
             </li>
           </ul>
         </nav>
