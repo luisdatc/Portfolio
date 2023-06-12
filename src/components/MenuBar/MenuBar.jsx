@@ -36,7 +36,7 @@ const MenuBar = () => {
     <header className="header sticky-top">
       <div className="header--content">
         <Link to="/" className="header--content--logo">
-          <span>Luis Torres Portfolio</span>
+          <span>Luis Torres</span>
         </Link>
 
         <nav

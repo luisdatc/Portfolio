@@ -1,32 +1,44 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+
+import "./Profile.scss";
 
 const Profile = () => {
   return (
-    <Container>
+    <Container className="profile">
       <Row>
         <Col xs={12} s={12} md={6} xl={6} className="profile-column-text">
-          <div>
-            <h1>Hola, soy Luis Torres</h1>
+          <div className="">
+            <p className="p-1">Hola, soy</p>
+            <h1 className="p-1">Luis Torres</h1>
           </div>
           <div>
-            <p>Soy desarrollador Front End</p>
-            <p>y te doy la bienvenida a mi portfolio 😎</p>
+            <div className="animate__animated animate__zoomIn animate__repeat-2 animate__slower">
+              <h2 className="p-1">Desarrollador Front End</h2>
+            </div>
+            <p className="p-1">y te doy la bienvenida a mi <strong>portfolio</strong> 😎</p>
           </div>
-          <div>
-            <button>CV Español</button>
-            <button>CV Ingles</button>
-            <a href="/CV-Dev-Luis-Torres-Eng.pdf" download>
-              CV Ingles
-            </a>
+          <div className="p-2">
+            <button className="profile-cv-ing">
+              <a href="/CV-Dev-Luis-Torres-Eng.pdf" download>
+                CV Ingles
+              </a>
+            </button>
+            <button className="profile-cv-esp">
+              <a href="/CV-Dev-Luis-Torres-Esp.pdf" download>
+                CV Español
+              </a>
+            </button>
           </div>
         </Col>
         <Col xs={12} s={12} md={6} xl={6} className="profile-column-image">
-          <img
-            src="/profile.jpg"
-            alt="Image Profile"
-            className="profile-image img-fluid"
-          />
+          <div className="profile-column-image-bg d-flex justify-content-center img-fluid">
+            <img
+              src="/profile-removebg-preview.png"
+              alt="Image Profile"
+              className="profile-image img-fluid"
+            />
+          </div>
         </Col>
       </Row>
     </Container>
