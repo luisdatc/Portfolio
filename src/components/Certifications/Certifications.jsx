@@ -16,11 +16,11 @@ const Certifications = () => {
   return (
     <Container id="certificados">
       <Row className="align-items-center">
-        <Col xs={12} s={12} md={12} lg={9} xl={9} className="">
+        <Col xs={12} s={12} md={12} lg={9} xl={9} className="text-center">
           {selectedImage ? (
             <img src={selectedImage} alt="" className="img-fluid" />
           ) : (
-            <h3 className="text-center">
+            <h3 className="text-center p-5">
               Seleccione un certificado para verlo
             </h3>
           )}
@@ -56,6 +56,22 @@ const Certifications = () => {
                 alt=""
                 className="img-fluid"
                 onClick={() => handleClick("/ReactJS.png")}
+              />
+            </Col>
+            <Col xs={4} s={4} md={4} lg={10} xl={10} className="mt-1 mb-1">
+              <img
+                src="/codoacodo.PNG"
+                alt=""
+                className="img-fluid"
+                onClick={() => handleClick("/codoacodo.PNG")}
+              />
+            </Col>
+            <Col xs={4} s={4} md={4} lg={10} xl={10} className="mt-1 mb-1">
+              <img
+                src="/seProgramar.PNG"
+                alt=""
+                className="img-fluid"
+                onClick={() => handleClick("/seProgramar.PNG")}
               />
             </Col>
           </Row>

@@ -6,56 +6,56 @@ const Technologies = () => {
     <Container className="p-3">
       <h2 className="text-center p-2">Tecnologias que mayormente uso:</h2>
       <Row className="text-center p-4">
-        <Col xs={12} s={12} md={12} lg={4} xl={4}>
+        <Col xs={12} sm={4} md={4} lg={4} xl={4}>
           <h3>Lenguaje Principal</h3>
           <Row>
-            <Col xs={12} s={12} md={12} lg={6} xl={6}>
+            <Col xs={12} sm={6} md={6} lg={6} xl={6}>
               <img src="/iconos/html5.svg" alt="" />
               <h6>html</h6>
             </Col>
-            <Col xs={12} s={12} md={12} lg={6} xl={6}>
+            <Col xs={12} sm={6} md={6} lg={6} xl={6}>
               <img src="/iconos/css.svg" alt="" />
               <h6>css3</h6>
             </Col>
-            <Col xs={12} s={12} md={12} lg={12} xl={12}>
+            <Col xs={12} sm={12} md={12} lg={12} xl={12}>
               <img src="/iconos/js.svg" alt="" />
               <h6>js</h6>
             </Col>
           </Row>
         </Col>
-        <Col xs={12} s={12} md={12} lg={4} xl={4}>
-          <h3>Librerias/Frameworks</h3>
+        <Col xs={12} sm={4} md={4} lg={4} xl={4}>
+          <h3>Frameworks</h3>
           <Row>
-            <Col xs={12} s={12} md={12} lg={12} xl={12}>
+            <Col xs={12} sm={6} md={6} lg={12} xl={12}>
               <img src="/iconos/bootstrap.svg" alt="" />
               <h6>Bootstrap</h6>
             </Col>
-            <Col xs={12} s={12} md={12} lg={12} xl={12}>
+            <Col xs={12} sm={6} md={6} lg={12} xl={12}>
               <img src="/iconos/react.png" alt="" />
               <h6>ReactJS</h6>
             </Col>
           </Row>
         </Col>
-        <Col xs={12} s={12} md={12} lg={4} xl={4}>
+        <Col xs={12} sm={4} md={4} lg={4} xl={4}>
           <h3>Herramientas</h3>
           <Row>
-            <Col xs={12} s={12} md={12} lg={4} xl={4}>
+            <Col xs={12} sm={6} md={6} lg={4} xl={4}>
               <img src="/iconos/git.svg" alt="" />
               <h6>Bootstrap</h6>
             </Col>
-            <Col xs={12} s={12} md={12} lg={4} xl={4}>
+            <Col xs={12} sm={6} md={6} lg={4} xl={4}>
               <img src="/iconos/github.png" alt="" />
               <h6>ReactJS</h6>
             </Col>
-            <Col xs={12} s={12} md={12} lg={4} xl={4}>
+            <Col xs={12} sm={6} md={6} lg={4} xl={4}>
               <img src="/iconos/npm.svg" alt="" />
               <h6>ReactJS</h6>
             </Col>
-            <Col xs={12} s={12} md={12} lg={6} xl={6}>
+            <Col xs={12} sm={6} md={6} lg={6} xl={6}>
               <img src="/iconos/sass.svg" alt="" />
               <h6>ReactJS</h6>
             </Col>
-            <Col xs={12} s={12} md={12} lg={6} xl={6}>
+            <Col xs={12} sm={12} md={12} lg={6} xl={6}>
               <img src="/iconos/firebase.svg" alt="" />
               <h6>ReactJS</h6>
             </Col>

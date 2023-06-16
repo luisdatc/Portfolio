@@ -24,9 +24,9 @@ const ProjectsContainer = () => {
 
   return (
     <Container className="" id="projects">
-      <h1 className="heading text-center">Proyectos Perosnales</h1>
+      <h1 className="heading text-center">Proyectos Personales</h1>
       <>
-        <ProjectList projects={projects} />
+        <ProjectList projects={projects}/>
       </>
     </Container>
   );

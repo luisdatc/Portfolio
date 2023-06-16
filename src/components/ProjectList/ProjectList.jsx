@@ -8,8 +8,8 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import { Button, Card } from "react-bootstrap";
-import PaginationButton from "../PaginationButton/PaginationButton";
-import { Link, useParams } from "react-router-dom";
+
+import { Link} from "react-router-dom";
 
 
 const ProjectList = ({ projects }) => {
@@ -46,7 +46,7 @@ const ProjectList = ({ projects }) => {
           </Card>
         </SwiperSlide>
       ))}
-      <PaginationButton />
+
     </Swiper>
   );
 };

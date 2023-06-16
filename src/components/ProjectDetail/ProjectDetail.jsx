@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const ProjectDetail = ({ project }) => {
   return (
-    <Container>
-      <Card className="p-1 mx-auto">
+    <Container className="p-5">
+      <Card className="mx-auto">
         <Card.Img variant="top" src={project.image} />
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
@@ -19,29 +19,37 @@ const ProjectDetail = ({ project }) => {
           <Card.Text>{project.date}</Card.Text>
           <div className="text-center">
             <h3>Tecnologias usadas para el desarrollo del proyecto: </h3>
-            <div className="d-flex justify-content-around align-items-center">
-            {project.technologies &&
-              project.technologies.map((icon, index) => {
-                return <img key={index} src={icon} alt="technology icon" />;
-              })}
-
+            <div className="d-flex justify-content-around align-items-center flex-wrap p-1">
+              {project.technologies &&
+                project.technologies.map((icon, index) => {
+                  return (
+                    <img
+                      key={index}
+                      src={icon}
+                      alt="technology icon"
+                      className=""
+                    />
+                  );
+                })}
             </div>
           </div>
           <div className="text-center">
-            <Button
-              variant="primary"
-              href={project.repository}
-              target="_blank"
-            >
-              Repositorio
+            <Button variant="primary" className="m-1">
+              <a href={project.repository} target="_blank" className="">
+                Repositorio
+              </a>
             </Button>
-       
-            <Button variant="primary" href={project.url} target="_blank">
-              Sitio Web
+
+            <Button variant="primary" className="m-1">
+              <a href={project.url} target="_blank" className="">
+                Sitio Web
+              </a>
             </Button>
           </div>
-          <Link to={"/"}>
-            <Button variant="primary">Volver a home</Button>
+          <Link to={"/"} className="">
+            <Button variant="primary" className="mt-4">
+              Volver a home
+            </Button>
           </Link>
         </Card.Body>
       </Card>
