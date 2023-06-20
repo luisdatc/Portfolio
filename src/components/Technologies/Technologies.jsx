@@ -8,22 +8,24 @@ const Technologies = () => {
     <section id="technologies">
       <Container className="p-5 technology-container">
         <Card className="technology-card">
-          <h2 className="technology-card-title text-center p-2">Tecnologias que mayormente uso:</h2>
+          <h2 className="technology-card-title text-center p-2">
+            Tecnologias que mayormente uso:
+          </h2>
           <Row className="text-center p-3">
             <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
               <Card className="w-100 h-100 technologies">
-                <h3>Lenguaje Principal</h3>
+                <h4>Lenguaje Principal</h4>
                 <Row>
                   <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-                    <img src="/iconos/html5.svg" alt="" />
+                    <img src="/iconos/html5.svg" alt="" className="img-fluid" />
                     <h6>html</h6>
                   </Col>
                   <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-                    <img src="/iconos/css.svg" alt="" />
+                    <img src="/iconos/css.svg" alt="" className="img-fluid" />
                     <h6>css3</h6>
                   </Col>
                   <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <img src="/iconos/js.svg" alt="" />
+                    <img src="/iconos/js.svg" alt="" className="img-fluid" />
                     <h6>js</h6>
                   </Col>
                 </Row>
@@ -31,14 +33,18 @@ const Technologies = () => {
             </Col>
             <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
               <Card className="w-100 h-100 technologies">
-                <h3>Frameworks</h3>
+                <h4>Frameworks</h4>
                 <Row>
                   <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <img src="/iconos/bootstrap.svg" alt="" />
+                    <img
+                      src="/iconos/bootstrap.svg"
+                      alt=""
+                      className="img-fluid"
+                    />
                     <h6>Bootstrap</h6>
                   </Col>
                   <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-                    <img src="/iconos/react.png" alt="" />
+                    <img src="/iconos/react.png" alt="" className="img-fluid" />
                     <h6>ReactJS</h6>
                   </Col>
                 </Row>
@@ -46,26 +52,34 @@ const Technologies = () => {
             </Col>
             <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
               <Card className="w-100 h-100 technologies">
-                <h3>Herramientas</h3>
+                <h4>Herramientas</h4>
                 <Row>
                   <Col xs={12} sm={12} md={6} lg={4} xl={4}>
-                    <img src="/iconos/git.svg" alt="" />
+                    <img src="/iconos/git.svg" alt="" className="img-fluid" />
                     <h6>Git</h6>
                   </Col>
                   <Col xs={12} sm={12} md={6} lg={4} xl={4}>
-                    <img src="/iconos/github.png" alt="" />
+                    <img
+                      src="/iconos/github.png"
+                      alt=""
+                      className="img-fluid"
+                    />
                     <h6>Github</h6>
                   </Col>
                   <Col xs={12} sm={12} md={6} lg={4} xl={4}>
-                    <img src="/iconos/npm.svg" alt="" />
+                    <img src="/iconos/npm.svg" alt="" className="img-fluid" />
                     <h6>Npm</h6>
                   </Col>
                   <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-                    <img src="/iconos/sass.svg" alt="" />
+                    <img src="/iconos/sass.svg" alt="" className="img-fluid" />
                     <h6>Sass</h6>
                   </Col>
                   <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-                    <img src="/iconos/firebase.svg" alt="" />
+                    <img
+                      src="/iconos/firebase.svg"
+                      alt=""
+                      className="img-fluid"
+                    />
                     <h6>Firebase</h6>
                   </Col>
                 </Row>
