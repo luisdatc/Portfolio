@@ -171,7 +171,6 @@ const Education = () => {
           </p>
         </section>
       </div>
-      
     </div>
   );
 };

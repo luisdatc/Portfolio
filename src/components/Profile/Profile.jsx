@@ -14,7 +14,7 @@ const Profile = () => {
           </div>
           <div>
             <div className="animate__animated animate__zoomIn animate__repeat-2 animate__slower">
-              <h2 className="p-1">Desarrollador Front End</h2>
+              <h2 className="pt-1">Desarrollador Front End</h2>
             </div>
             <p className="p-1">y te doy la bienvenida a mi <strong>portfolio</strong> 😎</p>
           </div>

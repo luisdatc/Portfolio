@@ -1,0 +1,84 @@
+.technology {
+  &-container {
+    background: transparent;
+    position: relative;
+    box-shadow: 0px 0px 5px #00f7e6;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  &-card {
+    cursor: default;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #212121;
+    background-color: rgba(255, 255, 255, 0.074) !important;
+    border: 1px solid #00f7e6 !important;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    &-title {
+      color: white;
+    }
+    &:hover {
+      border: 1px solid #030f28 !important;
+      box-shadow: 0px 0px 5px #030f28;
+    }
+  }
+}
+
+.technologies {
+  background-color: transparent !important;
+  padding: 0.5rem;
+  border: 2px solid #030f28 !important;
+  color: white;
+  &:hover {
+    border: 2px solid #00f7e6 !important;
+    color: #030f28;
+  }
+}
+
+.technology-container::after,
+.technology-container::before {
+  width: 100px;
+  height: 100px;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.5s linear;
+}
+
+.technology-container::after {
+  top: -15px;
+  left: -15px;
+  background-color: #030f28;
+  animation: animFirst 5s linear infinite;
+}
+
+.technology-container::before {
+  background-color: #00f7e6;
+  top: 85%;
+  left: 94%;
+  animation: animSecond 5s linear infinite;
+  animation-delay: 3s;
+}
+
+.technology-container:hover {
+  box-shadow: 0px 0px 10px #030f28;
+}
+
+.technology-container:hover::after {
+  left: 93%;
+  transform: scale(1.2);
+}
+
+.technology-container:hover::before {
+  left: -10px;
+  transform: scale(1.2);
+}

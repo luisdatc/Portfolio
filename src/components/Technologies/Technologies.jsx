@@ -1,68 +1,80 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
+import "./Technologies.scss";
+
 const Technologies = () => {
   return (
-    <Container className="p-3">
-      <h2 className="text-center p-2">Tecnologias que mayormente uso:</h2>
-      <Row className="text-center p-4">
-        <Col xs={12} sm={4} md={4} lg={4} xl={4}>
-          <h3>Lenguaje Principal</h3>
-          <Row>
-            <Col xs={12} sm={6} md={6} lg={6} xl={6}>
-              <img src="/iconos/html5.svg" alt="" />
-              <h6>html</h6>
+    <section id="technologies">
+      <Container className="p-5 technology-container">
+        <Card className="technology-card">
+          <h2 className="technology-card-title text-center p-2">Tecnologias que mayormente uso:</h2>
+          <Row className="text-center p-3">
+            <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
+              <Card className="w-100 h-100 technologies">
+                <h3>Lenguaje Principal</h3>
+                <Row>
+                  <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+                    <img src="/iconos/html5.svg" alt="" />
+                    <h6>html</h6>
+                  </Col>
+                  <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+                    <img src="/iconos/css.svg" alt="" />
+                    <h6>css3</h6>
+                  </Col>
+                  <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <img src="/iconos/js.svg" alt="" />
+                    <h6>js</h6>
+                  </Col>
+                </Row>
+              </Card>
             </Col>
-            <Col xs={12} sm={6} md={6} lg={6} xl={6}>
-              <img src="/iconos/css.svg" alt="" />
-              <h6>css3</h6>
+            <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
+              <Card className="w-100 h-100 technologies">
+                <h3>Frameworks</h3>
+                <Row>
+                  <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <img src="/iconos/bootstrap.svg" alt="" />
+                    <h6>Bootstrap</h6>
+                  </Col>
+                  <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+                    <img src="/iconos/react.png" alt="" />
+                    <h6>ReactJS</h6>
+                  </Col>
+                </Row>
+              </Card>
             </Col>
-            <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-              <img src="/iconos/js.svg" alt="" />
-              <h6>js</h6>
+            <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
+              <Card className="w-100 h-100 technologies">
+                <h3>Herramientas</h3>
+                <Row>
+                  <Col xs={12} sm={12} md={6} lg={4} xl={4}>
+                    <img src="/iconos/git.svg" alt="" />
+                    <h6>Git</h6>
+                  </Col>
+                  <Col xs={12} sm={12} md={6} lg={4} xl={4}>
+                    <img src="/iconos/github.png" alt="" />
+                    <h6>Github</h6>
+                  </Col>
+                  <Col xs={12} sm={12} md={6} lg={4} xl={4}>
+                    <img src="/iconos/npm.svg" alt="" />
+                    <h6>Npm</h6>
+                  </Col>
+                  <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+                    <img src="/iconos/sass.svg" alt="" />
+                    <h6>Sass</h6>
+                  </Col>
+                  <Col xs={12} sm={12} md={12} lg={6} xl={6}>
+                    <img src="/iconos/firebase.svg" alt="" />
+                    <h6>Firebase</h6>
+                  </Col>
+                </Row>
+              </Card>
             </Col>
           </Row>
-        </Col>
-        <Col xs={12} sm={4} md={4} lg={4} xl={4}>
-          <h3>Frameworks</h3>
-          <Row>
-            <Col xs={12} sm={6} md={6} lg={12} xl={12}>
-              <img src="/iconos/bootstrap.svg" alt="" />
-              <h6>Bootstrap</h6>
-            </Col>
-            <Col xs={12} sm={6} md={6} lg={12} xl={12}>
-              <img src="/iconos/react.png" alt="" />
-              <h6>ReactJS</h6>
-            </Col>
-          </Row>
-        </Col>
-        <Col xs={12} sm={4} md={4} lg={4} xl={4}>
-          <h3>Herramientas</h3>
-          <Row>
-            <Col xs={12} sm={6} md={6} lg={4} xl={4}>
-              <img src="/iconos/git.svg" alt="" />
-              <h6>Bootstrap</h6>
-            </Col>
-            <Col xs={12} sm={6} md={6} lg={4} xl={4}>
-              <img src="/iconos/github.png" alt="" />
-              <h6>ReactJS</h6>
-            </Col>
-            <Col xs={12} sm={6} md={6} lg={4} xl={4}>
-              <img src="/iconos/npm.svg" alt="" />
-              <h6>ReactJS</h6>
-            </Col>
-            <Col xs={12} sm={6} md={6} lg={6} xl={6}>
-              <img src="/iconos/sass.svg" alt="" />
-              <h6>ReactJS</h6>
-            </Col>
-            <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-              <img src="/iconos/firebase.svg" alt="" />
-              <h6>ReactJS</h6>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </Container>
+        </Card>
+      </Container>
+    </section>
   );
 };
 

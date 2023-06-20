@@ -82,14 +82,14 @@ html {
 }
 
 .swiper-slide {
-  width: 30rem;
+  width:28rem; //se puede modificar
 /*   height: 42rem; */
   position: relative;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .swiper_container {//modificar esta medida
-    height: 50rem;
+    /* height: 43rem; 
   }
   .swiper-slide {//puedo modificar esta y la de abajo
     width: 28rem !important;
@@ -97,9 +97,9 @@ html {
   }
   .swiper-slide img {
     width: 28rem !important;
-    height: 36rem !important;
+
   }
-}
+} */
 
 .swiper-slide img {
 /*   width: 37rem;

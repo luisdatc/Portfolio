@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <Container id="contacto">
       <Row className="text-center align-items-center footer-text-column">
-        <Col xs={12} s={12} md={12} lg={8} xl={8} className="">
-          <Row className="align-items-center justify-content-between">
+        <Col xs={12} s={12} md={12} lg={6} xl={6} className="">
+          <Row className="align-items-center">
             <Col xs={12} s={12} md={12} lg={6} xl={6} className="">
               <h5>luisct91@gmail.com</h5>
             </Col>
@@ -22,15 +22,19 @@ const Footer = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={12} s={12} md={12} lg={4} xl={4}>
-          <a>
-            <img src="/iconos/github.png" alt="Github Page" onClick={gitHub}  className="social-icon"/>
+        <Col xs={12} s={12} md={12} lg={6} xl={6}>
+          <a href="https://github.com/luisdatc" target="_blank">
+            <img
+              src="/iconos/github.png"
+              alt="Github Page"
+              /* onClick={gitHub} */ className="social-icon"
+            />
           </a>
-          <a>
+          <a href="https://www.linkedin.com/in/luisdatc/" target="_blank">
             <img
               src="/iconos/linkedin.svg"
               alt="LinkedIn Profile"
-              onClick={linkedIn} className="social-icon"
+              /* onClick={linkedIn} */ className="social-icon"
             />
           </a>
         </Col>
