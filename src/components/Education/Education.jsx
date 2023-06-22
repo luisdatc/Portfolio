@@ -74,104 +74,107 @@ const Education = () => {
   }
 
   return (
-    <div className="wrapper" id="education">
-      <div className="center-line"></div>
-      <div className="row row-1">
-        <section>
-          <i className="icon fas fa-home"></i>
-          <div className="details">
-            <span className="title">Ingeniero Mec&aacute;nico</span>
-            <span>Marzo 2018</span>
-          </div>
-          <p>Universidad del Zulia.</p>
-        </section>
-      </div>
-      <div className="row row-2">
-        <section>
-          <i className="icon fas fa-star"></i>
-          <div className="details">
-            <span className="title">Argentina Programa: #SeProgramar</span>
-            <span>Diciembre 2021</span>
-          </div>
-        </section>
-      </div>
-      <div className="row row-1">
-        <section>
-          <i className="icon fas fa-home"></i>
-          <div className="details">
-            <span className="title">JAVA Full Stack</span>
-            <span>Julio 2022</span>
-          </div>
-          <p>Codo a Codo 4.0</p>
-        </section>
-      </div>
-      <div className="row row-2">
-        <section>
-          <i className="icon fas fa-star"></i>
-          <div className="details">
-            <span className="title">Argentina Programa: #YoPragramo</span>
-            <span>Agosto 2022</span>
-            <p>En espera del certificado.</p>
-          </div>
-        </section>
-      </div>
-      <div className="row row-1">
-        <section>
-          <i className="icon fas fa-rocket"></i>
-          <div className="details">
-            <span className="title">Desarrollo Web</span>
-            <span>Noviembre 2022</span>
-          </div>
-          <p>Coderhouse</p>
-        </section>
-      </div>
-      <div className="row row-2">
-        <section>
-          <i className="icon fas fa-globe"></i>
-          <div className="details">
-            <span className="title">Javascript</span>
-            <span>Marzo 2023</span>
-          </div>
-          <p>Coderhouse</p>
-        </section>
-      </div>
-      <div className="row row-1">
-        <section>
-          <i className="icon fas fa-paper-plane"></i>
-          <div className="details">
-            <span className="title">React JS</span>
-            <span>Mayo 2023</span>
-          </div>
-          <p>Coderhouse</p>
-        </section>
-      </div>
-      <div className="row row-2">
-        <section>
-          <i className="icon fas fa-map-marker-alt"></i>
-          <div className="details">
-            <span className="title">Programaci&oacute;n Backend</span>
-          </div>
+    <section id="education">
+      <h2 className="text-center education-title">Trayecto Educativo</h2>
+      <div className="wrapper">
+        <div className="center-line"></div>
+        <div className="row row-1">
+          <section>
+            <i className="icon fas fa-home"></i>
+            <div className="details">
+              <span className="title">Ingeniero Mec&aacute;nico</span>
+              <span>Marzo 2018</span>
+            </div>
+            <p>Universidad del Zulia.</p>
+          </section>
+        </div>
+        <div className="row row-2">
+          <section>
+            <i className="icon fas fa-star"></i>
+            <div className="details">
+              <span className="title">Argentina Programa: #SeProgramar</span>
+              <span>Diciembre 2021</span>
+            </div>
+          </section>
+        </div>
+        <div className="row row-1">
+          <section>
+            <i className="icon fas fa-home"></i>
+            <div className="details">
+              <span className="title">JAVA Full Stack</span>
+              <span>Julio 2022</span>
+            </div>
+            <p>Codo a Codo 4.0</p>
+          </section>
+        </div>
+        <div className="row row-2">
+          <section>
+            <i className="icon fas fa-star"></i>
+            <div className="details">
+              <span className="title">Argentina Programa: #YoPragramo</span>
+              <span>Agosto 2022</span>
+              <p>En espera del certificado.</p>
+            </div>
+          </section>
+        </div>
+        <div className="row row-1">
+          <section>
+            <i className="icon fas fa-rocket"></i>
+            <div className="details">
+              <span className="title">Desarrollo Web</span>
+              <span>Noviembre 2022</span>
+            </div>
+            <p>Coderhouse</p>
+          </section>
+        </div>
+        <div className="row row-2">
+          <section>
+            <i className="icon fas fa-globe"></i>
+            <div className="details">
+              <span className="title">Javascript</span>
+              <span>Marzo 2023</span>
+            </div>
+            <p>Coderhouse</p>
+          </section>
+        </div>
+        <div className="row row-1">
+          <section>
+            <i className="icon fas fa-paper-plane"></i>
+            <div className="details">
+              <span className="title">React JS</span>
+              <span>Mayo 2023</span>
+            </div>
+            <p>Coderhouse</p>
+          </section>
+        </div>
+        <div className="row row-2">
+          <section>
+            <i className="icon fas fa-map-marker-alt"></i>
+            <div className="details">
+              <span className="title">Programaci&oacute;n Backend</span>
+            </div>
 
-          <p>Inicio de cursada Julio 2023.</p>
-          <p>Coderhouse</p>
+            <p>Inicio de cursada Julio 2023.</p>
+            <p>Coderhouse</p>
 
-          <p></p>
-        </section>
+            <p></p>
+          </section>
+        </div>
+        <div className="row row-1">
+          <section>
+            <i className="icon fas fa-paper-plane"></i>
+            <div className="details">
+              <span className="title">Desarrollador Full Stack</span>
+              <span>En proceso</span>
+            </div>
+            <p>
+              Finalicacion de la carrera comprendida por los cursos: Desarrollo
+              Web, JavaScript, React JS y Programaci&oacute;n Backend.
+            </p>
+          </section>
+        </div>
       </div>
-      <div className="row row-1">
-        <section>
-          <i className="icon fas fa-paper-plane"></i>
-          <div className="details">
-            <span className="title">Desarrollador Full Stack</span>
-            <span>En proceso</span>
-          </div>
-          <p>
-            Finalicacion de la carrera comprendida por los cursos: Desarrollo
-            Web, JavaScript, React JS y Programaci&oacute;n Backend.
-          </p>
-        </section>
-      </div>
-    </div>
+    </section>
   );
 };
 

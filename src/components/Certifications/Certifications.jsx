@@ -20,7 +20,7 @@ const Certifications = () => {
           {selectedImage ? (
             <img src={selectedImage} alt="" className="img-fluid" />
           ) : (
-            <h3 className="text-center p-5">
+            <h3 className="text-center p-5 certifications-text">
               Seleccione un certificado para verlo
             </h3>
           )}

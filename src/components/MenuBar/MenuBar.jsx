@@ -46,10 +46,10 @@ const MenuBar = () => {
         >
           <ul>
             <li>
-              <Link to={"/"}>Home</Link>
+              <Link to={"/"}>Inicio</Link>
             </li>
             <li>
-              <a href="#about">About Me</a>
+              <a href="#about">Acerca de Mi</a>
             </li>
             <li>
               <a href="#education">Educacion</a>

@@ -17,10 +17,7 @@
   --bg: #f5f5f5;
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
+
 
 /* @media (min-width: 1440px) {
   html {
@@ -73,6 +70,8 @@ html {
   padding: 1rem 0;
   font-size: 3.5rem;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  color: #00F7E6;
 }
 
 .swiper_container {
@@ -187,3 +186,4 @@ html {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }*/
+

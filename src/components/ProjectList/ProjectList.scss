@@ -1,0 +1,17 @@
+.card.project-list-card {
+  background: transparent;
+  border: 1px solid #00f7e6;
+  color: #00f7e6;
+}
+
+.btn-primary.project-list-card-button {
+  background: #122ab3;
+  color: rgba(0, 255, 160, 1);
+  border: 1px solid rgba(0, 255, 160, 1);
+  font-family: "Roboto Condensed", sans-serif;
+  &:hover{
+    background: rgba(0, 255, 160, 1);
+    color: #122ab3;
+    border: 1px solid #122ab3;
+  }
+}

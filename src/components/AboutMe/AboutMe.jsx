@@ -1,13 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-import "./AboutMe.scss"
+import "./AboutMe.scss";
 
 const AboutMe = () => {
   return (
     <div id="about">
       <Container>
-        <p className="p-3 about-me">
+        <h2 className="text-center m-2 about-me">Acerca de Mi</h2>
+        <p className="p-3 about-me-text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
           adipisci fuga, autem ab expedita quisquam culpa delectus quis quos
           voluptatibus minus eius pariatur accusantium. Dolore qui eius quae
@@ -27,10 +28,7 @@ const AboutMe = () => {
           nostrum fugiat tempore dignissimos! Eligendi alias commodi excepturi
           ab. Illum minima sit aliquid? Asperiores aut odit excepturi quod,
           eveniet natus optio quisquam quas repellat ullam perferendis quibusdam
-          magni fugit. Dolorum quis qui incidunt at, eaque corrupti dicta
-          tempora rerum, alias saepe, nobis repellendus! Iure voluptatibus
-          assumenda ex blanditiis distinctio, sunt quis consequuntur tenetur
-          culpa natus aut adipisci vel! Quos, accusamus.
+          magni fugit.
         </p>
       </Container>
     </div>

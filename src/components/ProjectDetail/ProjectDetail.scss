@@ -1,0 +1,39 @@
+.card.project-detail-card {
+  background: transparent;
+  border: 1px solid #00f7e6;
+  color: #00f7e6;
+  text-align: justify;
+}
+.btn-primary.project-detail-button {
+  background: #030f28;
+  border: 1px solid #00f7e6;
+  color: #00f7e6;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  &:hover {
+    background: #00f7e6;
+    border: 1px solid #030f28;
+    color: #030f28;
+  }
+}
+
+.project-detail-button-link:hover {
+  color: #030f28;
+}
+
+.btn-primary.project-detail-button-home {
+  background: #122ab3;
+  color: rgba(0, 255, 160, 1);
+  border: 1px solid rgba(0, 255, 160, 1);
+  font-family: "Roboto Condensed", sans-serif;
+  &:hover {
+    background: rgba(0, 255, 160, 1);
+    color: #122ab3;
+    border: 1px solid #122ab3;
+    font-weight: 700;
+  }
+}
+
+.card-text {
+  padding: 1rem 0.5rem;
+}

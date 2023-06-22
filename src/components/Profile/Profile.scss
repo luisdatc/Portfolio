@@ -1,10 +1,13 @@
 .profile {
   padding: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
   &-column-text {
     align-self: center;
     text-align: end;
     & p {
       font-size: 1.5rem;
+      color: white;
     }
     & h1 {
       font-size: 2.5rem;
@@ -21,9 +24,11 @@
       -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
       -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
       transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      padding: 0.5rem 0;
     }
     & h2 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
+      padding: 0.5rem 0;
       /*font: normal 48px/normal "Warnes", Helvetica, sans-serif; */
       color: rgba(255, 255, 255, 1);
       text-decoration: normal;
@@ -39,6 +44,7 @@
       transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     }
   }
+
 }
 
 .profile-cv-ing,
@@ -47,13 +53,13 @@
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
-  border: 1px solid rgb(61, 106, 255);
+  border: 1px solid #00F7E6;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
   background: transparent;
-  color: rgb(61, 106, 255);
+  color: #00F7E6;
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   -webkit-transition: all 0.2s ease-in;
@@ -63,12 +69,12 @@
 
 .profile-cv-ing:hover,
 .profile-cv-esp:hover {
-  background: rgb(61, 106, 255);
-  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  background:  #030F28;
+  box-shadow: 0 0 10px 2px  #030F28;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: white;
+  color: #00F7E6;
 }
 
 .profile-cv-ing a:hover,

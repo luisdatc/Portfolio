@@ -1,19 +1,21 @@
 import { Badge, Button, Card, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+import "./ProjectDetail.scss";
+
 const ProjectDetail = ({ project }) => {
   return (
     <Container className="p-5">
-      <Card className="mx-auto">
+      <Card className="card mx-auto project-detail-card">
         <Card.Img variant="top" src={project.image} />
         <Card.Body>
           <Card.Title>{project.title}</Card.Title>
           <div>
-            <h4>
+            {/*             <h4>
               <Badge pill bg="secondary">
                 New
               </Badge>
-            </h4>
+            </h4> */}
           </div>
           <Card.Text>{project.description}</Card.Text>
           <Card.Text>{project.date}</Card.Text>
@@ -34,20 +36,20 @@ const ProjectDetail = ({ project }) => {
             </div>
           </div>
           <div className="text-center">
-            <Button variant="primary" className="m-1">
-              <a href={project.repository} target="_blank" className="">
+            <Button variant="primary" className="m-1 project-detail-button">
+              <a href={project.repository} target="_blank" className="project-detail-button-link">
                 Repositorio
               </a>
             </Button>
 
-            <Button variant="primary" className="m-1">
-              <a href={project.url} target="_blank" className="">
+            <Button variant="primary" className="m-1 project-detail-button">
+              <a href={project.url} target="_blank" className="project-detail-button-link">
                 Sitio Web
               </a>
             </Button>
           </div>
           <Link to={"/"} className="">
-            <Button variant="primary" className="mt-4">
+            <Button variant="primary" className="mt-4 project-detail-button-home">
               Volver a home
             </Button>
           </Link>

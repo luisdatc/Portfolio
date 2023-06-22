@@ -5,8 +5,8 @@ import "./Technologies.scss";
 
 const Technologies = () => {
   return (
-    <section id="technologies">
-      <Container className="p-5 technology-container">
+    <section id="technologies" className="p-3">
+      <Container className="p-4 technology-container">
         <Card className="technology-card">
           <h2 className="technology-card-title text-center p-2">
             Tecnologias que mayormente uso:

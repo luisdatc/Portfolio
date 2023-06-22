@@ -1,14 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { Link } from "react-router-dom";
+import { Button, Card } from "react-bootstrap";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
-import { Button, Card } from "react-bootstrap";
-
-import { Link } from "react-router-dom";
+import "./ProjectList.scss";
 
 const ProjectList = ({ projects }) => {
   return (
@@ -29,12 +28,12 @@ const ProjectList = ({ projects }) => {
     >
       {projects.map(({ id, title, image }) => (
         <SwiperSlide key={id}>
-          <Card key={id}>
+          <Card key={id} className="project-list-card">
             <Card.Img variant="top" src={image} />
             <Card.Body>
               <Card.Title>{title}</Card.Title>
               <Link to={`/detail/${id}`}>
-                <Button variant="success">+ Detalles</Button>
+                <Button className="project-list-card-button">+ Detalles</Button>
               </Link>
             </Card.Body>
           </Card>
