@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./Certifications.scss";
 import { Col, Container, Row } from "react-bootstrap";
+import { LanguageContext } from "../../context/LanguageContext";
 
 const Certifications = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const { isEnglish } = useContext(LanguageContext);
 
   const handleClick = (image) => {
     if (selectedImage === image) {
@@ -21,7 +23,9 @@ const Certifications = () => {
             <img src={selectedImage} alt="" className="img-fluid" />
           ) : (
             <h3 className="text-center p-5 certifications-text">
-              Seleccione un certificado para verlo
+              {isEnglish
+                ? "Select a certificate to watch it"
+                : "Seleccione un certificado para verlo"}
             </h3>
           )}
         </Col>

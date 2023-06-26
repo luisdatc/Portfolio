@@ -1,81 +1,16 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import {
-  FaLongArrowAltLeft,
-  FaLongArrowAltRight,
-  FaLongArrowAltUp,
-} from "react-icons/fa";
+import React, { useContext } from "react";
+
 import "./Education.scss";
+import { LanguageContext } from "../../context/LanguageContext";
 
 const Education = () => {
-  {
-    /*<section id="education">
-      <h3 className="heading">Educacion</h3>
-      <Container className="aboutMe-grid">
-         <div className="aboutMe-grid-box-1">
-          <div className="d-flex flex-column align-items-center">
-            <h2>Desarrolaldor Full Stack</h2>
-            <FaLongArrowAltUp />
-          </div>
-        </div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-2">
-          <div className="d-flex align-items-center justify-content-end h-100">
-            <div className="text-end">
-              <h3>Backend</h3>
-              <p>15/07/2023 - 23/12/2023</p>
-              <p>CoderHouse</p>
-            </div>
-            <FaLongArrowAltLeft />
-          </div>
-        </div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-3"></div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-4"></div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-5">
-          <div className="d-flex align-items-center h-100">
-            <FaLongArrowAltRight className="arriw-icon" />
-            <div className="text-start">
-              <h3>React JS</h3>
-              <p>20/03/2023 - 10/05/2023</p>
-              <p>CoderHouse</p>
-            </div>
-          </div>
-        </div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-6">
-          <div className="d-flex align-items-center justify-content-end h-100">
-            <div className="text-end">
-              <h3>JavaScript </h3>
-              <p>13/12/2022 - 14/02/2023</p>
-              <p>CoderHouse</p>
-            </div>
-            <FaLongArrowAltLeft />
-          </div>
-        </div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-7"></div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-8"></div>
-        <div className="aboutMe-grid-box aboutMe-grid-box-9">
-          <div className="d-flex align-items-center h-100">
-            <FaLongArrowAltRight />
-            <div className="text-start">
-              <h3>Desarrollo Web</h3>
-              <p>13/09/2022 - 15/11/2022</p>
-              <p>CoderHouse</p>
-            </div>
-          </div>
-        </div>
-        <div className="aboutMe-grid-box-12">
-          <div className="d-flex flex-column align-items-center h-100">
-            <FaLongArrowAltUp />
-            <h2>Ingeniero Mec&aacute;nico</h2>
-          </div>
-        </div> 
-
-      </Container>
-    </section>*/
-  }
+  const { isEnglish } = useContext(LanguageContext);
 
   return (
     <section id="education">
-      <h2 className="text-center education-title">Trayecto Educativo</h2>
+      <h2 className="text-center education-title">
+        {isEnglish ? "Educational Journey" : "Trayecto Educativo"}
+      </h2>
       <div className="wrapper">
         <div className="center-line"></div>
         <div className="row row-1">
@@ -113,8 +48,8 @@ const Education = () => {
             <div className="details">
               <span className="title">Argentina Programa: #YoPragramo</span>
               <span>Agosto 2022</span>
-              <p>En espera del certificado.</p>
             </div>
+            <p>En espera del certificado.</p>
           </section>
         </div>
         <div className="row row-1">

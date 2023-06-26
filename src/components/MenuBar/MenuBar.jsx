@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./MenuBar.scss";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../../context/LanguageContext";
 
 const MenuBar = () => {
+  const { isEnglish } = useContext(LanguageContext);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: 0,
@@ -46,25 +49,29 @@ const MenuBar = () => {
         >
           <ul>
             <li>
-              <Link to={"/"}>Inicio</Link>
+              <Link to={"/"}>{isEnglish ? "Home" : "Inicio"} </Link>
             </li>
             <li>
-              <a href="#about">Acerca de Mi</a>
+              <a href="#about">{isEnglish ? "About Me" : "Acerca de Mi"} </a>
             </li>
             <li>
-              <a href="#education">Educacion</a>
+              <a href="#education">{isEnglish ? "Education" : "Educación"} </a>
             </li>
             <li>
-              <a href="#technologies">Tecnologias</a>
+              <a href="#technologies">
+                {isEnglish ? "Technologies" : "Tecnologias"}{" "}
+              </a>
             </li>
             <li>
-              <a href="#projects">Proyectos</a>
+              <a href="#projects">{isEnglish ? "Projects" : "Proyectos"}</a>
             </li>
             <li>
-              <a href="#certificados">Certificados</a>
+              <a href="#certificados">
+                {isEnglish ? "Certificates" : "Certificados"}
+              </a>
             </li>
             <li>
-              <a href="#contacto">Contacto</a>
+              <a href="#contacto">{isEnglish ? "Contact" : "Contacto"}</a>
             </li>
           </ul>
         </nav>

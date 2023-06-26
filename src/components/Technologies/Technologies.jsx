@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
 import "./Technologies.scss";
+import { LanguageContext } from "../../context/LanguageContext";
 
 const Technologies = () => {
+  const { isEnglish } = useContext(LanguageContext);
   return (
     <section id="technologies" className="p-3">
       <Container className="p-4 technology-container">
         <Card className="technology-card">
           <h2 className="technology-card-title text-center p-2">
-            Tecnologias que mayormente uso:
+            {" "}
+            {isEnglish
+              ? "Technologies that I use the most: "
+              : "Tecnologias que mayormente uso:"}
           </h2>
           <Row className="text-center p-3">
             <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
               <Card className="w-100 h-100 technologies">
-                <h4>Lenguaje Principal</h4>
+                <h4>{isEnglish ? "Main Language" : "Lenguaje Principal"} </h4>
                 <Row>
                   <Col xs={12} sm={12} md={6} lg={6} xl={6}>
                     <img src="/iconos/html5.svg" alt="" className="img-fluid" />
@@ -52,7 +57,7 @@ const Technologies = () => {
             </Col>
             <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
               <Card className="w-100 h-100 technologies">
-                <h4>Herramientas</h4>
+                <h4>{isEnglish ? "Tools" : "Herramientas"}</h4>
                 <Row>
                   <Col xs={12} sm={12} md={6} lg={4} xl={4}>
                     <img src="/iconos/git.svg" alt="" className="img-fluid" />

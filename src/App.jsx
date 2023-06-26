@@ -11,10 +11,11 @@ import Technologies from "./components/Technologies/Technologies";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <BrowserRouter>
         <MenuBar />
         <Profile />
@@ -28,7 +29,7 @@ function App() {
         <Certifications />
         <Footer />
       </BrowserRouter>
-    </>
+    </LanguageProvider>
   );
 }
 

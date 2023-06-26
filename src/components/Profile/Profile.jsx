@@ -1,22 +1,37 @@
-import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import React, { useContext, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { LanguageContext } from "../../context/LanguageContext";
 
 import "./Profile.scss";
 
 const Profile = () => {
+  const { isEnglish, toggleLanguage } = useContext(LanguageContext);
+  const [showEnglish, setShowEnglish] = useState(isEnglish);
+
+  const handleToggle = () => {
+    toggleLanguage();
+    setShowEnglish(!showEnglish);
+  };
+
   return (
     <Container className="profile">
       <Row>
         <Col xs={12} s={12} md={6} xl={6} className="profile-column-text">
           <div className="">
-            <p className="p-1">Hola, soy</p>
+            <p className="p-1">{isEnglish ? "Hi, I am" : "Hola, soy"}</p>
             <h1>Luis Torres</h1>
           </div>
           <div>
             <div className="animate__animated animate__zoomIn animate__repeat-2 animate__slower">
-              <h2>Desarrollador Front End</h2>
+              <h2>
+                {isEnglish ? "Front End Developer" : "Desarrollador Front End"}
+              </h2>
             </div>
-            <p className="p-1">y te doy la bienvenida a mi <strong>portfolio</strong>😎</p>
+            <p className="p-1">
+              {isEnglish
+                ? "and I welcome you to my portfolio 😎"
+                : "y te doy la bienvenida a mi portfolio 😎"}
+            </p>
           </div>
           <div className="p-2">
             <button className="profile-cv-ing">
@@ -29,6 +44,25 @@ const Profile = () => {
                 CV Español
               </a>
             </button>
+          </div>
+          <div className="d-flex justify-content-end pt-2 pb-2">
+            <input
+              className="check"
+              type="checkbox"
+              id="checkbox_toggle"
+              onClick={handleToggle}
+            />
+            <div className="checkbox">
+              <label for="checkbox_toggle" className="slide">
+                <label for="checkbox_toggle" className="toggle"></label>
+                <label for="checkbox_toggle" className="text">
+                  Español
+                </label>
+                <label for="checkbox_toggle" className="text">
+                  English
+                </label>
+              </label>
+            </div>
           </div>
         </Col>
         <Col xs={12} s={12} md={6} xl={6} className="profile-column-image">

@@ -44,7 +44,6 @@
       transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
     }
   }
-
 }
 
 .profile-cv-ing,
@@ -53,13 +52,13 @@
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
-  border: 1px solid #00F7E6;
+  border: 1px solid #00f7e6;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
   background: transparent;
-  color: #00F7E6;
+  color: #00f7e6;
   overflow: hidden;
   box-shadow: 0 0 0 0 transparent;
   -webkit-transition: all 0.2s ease-in;
@@ -69,12 +68,12 @@
 
 .profile-cv-ing:hover,
 .profile-cv-esp:hover {
-  background:  #030F28;
-  box-shadow: 0 0 10px 2px  #030F28;
+  background: #030f28;
+  box-shadow: 0 0 10px 2px #030f28;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: #00F7E6;
+  color: #00f7e6;
 }
 
 .profile-cv-ing a:hover,
@@ -133,13 +132,77 @@
 }
 
 .profile-column-image-bg {
-  background: rgb(18, 42, 179);
+  background-image: url(/blob.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-position-y: 10px;
+ 
+
+/*   background: rgb(18, 42, 179);
   background: radial-gradient(
     circle,
     rgba(18, 42, 179, 0.8631827731092436) 21%,
     rgba(0, 255, 160, 1) 100%
   );
-  border-radius: 25% 75% 43% 57% / 25% 57% 43% 75%;
+   border-radius: 52% 48% 45% 55% / 25% 76% 24% 75% ; 
   width: 500px;
   height: 500px;
+  border-radius: 41% 59% 65% 35% / 15% 73% 27% 85%  ; */
+}
+
+//toggle
+
+.checkbox {
+  width: 250px;
+  height: 60px;
+  background-color: rgba(128, 128, 128, 0.377);
+  border-radius: 30px;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.checkbox .toggle {
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  border-radius: 30px;
+  left: 5px;
+  cursor: pointer;
+  background: linear-gradient(40deg, #00f7e6, #030f28 70%);
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px #030f28, 0px 0px 30px #00f7e6;
+}
+
+.checkbox .slide {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.checkbox .slide .text {
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.check:checked + .checkbox .slide .toggle {
+  transform: translateX(120px);
+  background:  linear-gradient(40deg, #030f28 30%, #00f7e6 70%) ;
+  box-shadow: -0px -0px 10px #030f28, -0px -0px 30px #00f7e6;
+ 
+}
+
+.check:checked + .checkbox .slide {
+  background-color: transparent;
+  color: #fff;
 }
