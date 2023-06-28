@@ -1,9 +1,8 @@
-.education-title{
-  color: #00F7E6;
-  font-family: 'Roboto Mono', monospace;
+.education-title {
+  color: #00f7e6;
+  font-family: "Roboto Mono", monospace;
   font-size: 3rem;
 }
- 
 
 .wrapper {
   max-width: 1080px;
@@ -15,10 +14,9 @@
   position: absolute;
   height: 100%;
   width: 4px;
-  background: #030F28;
-  background: linear-gradient(0deg, #030F28 0%, #00F7E6 100%);
+  background: #030f28;
+  background: linear-gradient(0deg, #030f28 0%, #00f7e6 100%);
   left: 50%;
-/*   top: 20px; */
   transform: translateX(-50%);
 }
 .wrapper .row {
@@ -31,8 +29,8 @@
   justify-content: flex-end;
 }
 .wrapper .row section {
-  background:  #030F28;
-  border: 1px solid #00F7E6;
+  background: #030f28;
+  border: 1px solid #00f7e6;
   border-radius: 5px;
   width: calc(50% - 40px);
   padding: 20px;
@@ -44,8 +42,8 @@
   content: "";
   height: 15px;
   width: 15px;
-  background: #030F28;
-  background: linear-gradient(90deg, #030F28 12%, #00F7E6 97%);
+  background: #030f28;
+  background: linear-gradient(90deg, #030f28 12%, #00f7e6 97%);
   top: 28px;
   z-index: -1;
   transform: rotate(45deg);
@@ -59,8 +57,12 @@
 .row section .icon,
 .center-line .scroll-icon {
   position: absolute;
-  background: rgb(18,42,179);
-  background: radial-gradient(circle, #030F28/* rgba(18,42,179,1) 21%*/ 11%,#00F7E6 /* rgba(0,255,160,1) 100%*/  70%);
+  background: rgb(18, 42, 179);
+  background: radial-gradient(
+    circle,
+    #030f28 /* rgba(18,42,179,1) 21%*/ 11%,
+    #00f7e6 /* rgba(0,255,160,1) 100%*/ 70%
+  );
   height: 40px;
   width: 40px;
   text-align: center;
@@ -99,11 +101,9 @@
 }
 .row section .bottom a {
   text-decoration: none;
-
   color: black;
   padding: 7px 15px;
   border-radius: 5px;
-  /* font-size: 17px; */
   font-weight: 400;
   transition: all 0.3s ease;
 }

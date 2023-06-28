@@ -10,7 +10,6 @@ const ProjectDetailContainer = () => {
   useEffect(() => {
     projectFetch(pid)
       .then((projectData) => {
-        console.log(projectData); // Verificar los datos devueltos
         setProject(projectData);
       })
       .catch((err) => console.log(err));

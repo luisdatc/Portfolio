@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { projectFetch } from "../../utils/project";
 import ProjectList from "../ProjectList/ProjectList";
+import { Container } from "react-bootstrap";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import { Container } from "react-bootstrap";
 
 import "./ProjectsContainer.scss";
 
@@ -23,10 +22,10 @@ const ProjectsContainer = () => {
   }, []);
 
   return (
-    <Container className="" id="projects">
+    <Container id="projects">
       <h1 className="heading text-center">Proyectos Personales</h1>
       <>
-        <ProjectList projects={projects}/>
+        <ProjectList projects={projects} />
       </>
     </Container>
   );

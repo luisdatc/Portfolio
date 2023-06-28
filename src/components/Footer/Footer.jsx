@@ -2,13 +2,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.scss";
 
 const Footer = () => {
-  const linkedIn = () => {
-    window.open("https://www.linkedin.com/in/luisdatc/");
-  };
-  const gitHub = () => {
-    window.open("https://github.com/luisdatc");
-  };
-
   return (
     <Container id="contacto">
       <Row className="text-center align-items-center footer-text-column">
@@ -27,14 +20,14 @@ const Footer = () => {
             <img
               src="/iconos/github.png"
               alt="Github Page"
-              /* onClick={gitHub} */ className="social-icon"
+              className="social-icon"
             />
           </a>
           <a href="https://www.linkedin.com/in/luisdatc/" target="_blank">
             <img
               src="/iconos/linkedin.svg"
               alt="LinkedIn Profile"
-              /* onClick={linkedIn} */ className="social-icon"
+              className="social-icon"
             />
           </a>
         </Col>

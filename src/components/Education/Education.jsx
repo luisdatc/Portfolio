@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 
 import "./Education.scss";
-import { LanguageContext } from "../../context/LanguageContext";
 
 const Education = () => {
   const { isEnglish } = useContext(LanguageContext);
@@ -88,10 +88,8 @@ const Education = () => {
             <div className="details">
               <span className="title">Programaci&oacute;n Backend</span>
             </div>
-
             <p>Inicio de cursada Julio 2023.</p>
             <p>Coderhouse</p>
-
             <p></p>
           </section>
         </div>
@@ -114,11 +112,3 @@ const Education = () => {
 };
 
 export default Education;
-
-/* 
-https://codepen.io/kranselius/pen/VRPzMM
-https://codepen.io/cianty/pen/GJmPbj
-https://codepen.io/r23ima/pen/gNGbjg
-https://codepen.io/Santhanakrishnan/pen/xxwQVjd
-
-*/
