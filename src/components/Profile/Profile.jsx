@@ -53,12 +53,12 @@ const Profile = () => {
               onClick={handleToggle}
             />
             <div className="checkbox">
-              <label for="checkbox_toggle" className="slide">
-                <label for="checkbox_toggle" className="toggle"></label>
-                <label for="checkbox_toggle" className="text">
+              <label htmlFor="checkbox_toggle" className="slide">
+                <label htmlFor="checkbox_toggle" className="toggle"></label>
+                <label htmlFor="checkbox_toggle" className="text">
                   Español
                 </label>
-                <label for="checkbox_toggle" className="text">
+                <label htmlFor="checkbox_toggle" className="text">
                   English
                 </label>
               </label>
