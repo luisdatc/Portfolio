@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { projectFetch } from "../../utils/project";
-import ProjectList from "../ProjectList/ProjectList";
 import { Container } from "react-bootstrap";
+import ProjectList from "../ProjectList/ProjectList";
+import { LanguageContext } from "../../context/LanguageContext";
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
+//Estilos
 import "./ProjectsContainer.scss";
 
 const ProjectsContainer = () => {
   const [projects, setProjects] = useState([]);
+  const { isEnglish } = useContext(LanguageContext);
 
   useEffect(() => {
     projectFetch()
@@ -23,7 +21,9 @@ const ProjectsContainer = () => {
 
   return (
     <Container id="projects">
-      <h1 className="heading text-center">Proyectos Personales</h1>
+      <h1 className="heading text-center">
+        {isEnglish ? "Personal Projects" : "Proyectos Personales"}
+      </h1>
       <>
         <ProjectList projects={projects} />
       </>

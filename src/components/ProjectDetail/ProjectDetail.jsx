@@ -1,9 +1,10 @@
 import { Button, Card, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-import "./ProjectDetail.scss";
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext";
+
+//Estilos
+import "./ProjectDetail.scss";
 
 const ProjectDetail = ({ project }) => {
   const { isEnglish } = useContext(LanguageContext);

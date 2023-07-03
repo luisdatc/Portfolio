@@ -1,8 +1,13 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext";
+
+//Animation AOS Scroll
 import AOS from "aos";
 
+//Estilos Propios
 import "./Education.scss";
+
+//Estilos Animacion AOS
 import "aos/dist/aos.css";
 
 AOS.init();

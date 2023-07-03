@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Container } from "react-bootstrap";
-
-import "./AboutMe.scss";
 import { LanguageContext } from "../../context/LanguageContext";
+
+//Estilos
+import "./AboutMe.scss";
 
 const AboutMe = () => {
   const { isEnglish } = useContext(LanguageContext);

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import ProjectDetail from "../ProjectDetail/ProjectDetail";
 import { useParams } from "react-router-dom";
 import { projectFetch } from "../../utils/project";
+import ProjectDetail from "../ProjectDetail/ProjectDetail";
 
 const ProjectDetailContainer = () => {
   const { pid } = useParams();

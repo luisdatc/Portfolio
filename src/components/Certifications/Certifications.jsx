@@ -1,7 +1,9 @@
 import { useContext, useState } from "react";
-import "./Certifications.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import { LanguageContext } from "../../context/LanguageContext";
+
+//Estilos
+import "./Certifications.scss";
 
 const Certifications = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -17,6 +19,9 @@ const Certifications = () => {
 
   return (
     <Container id="certificados">
+      <h1 className="certificates">
+        {isEnglish ? "Certificates" : "Certificados"}
+      </h1>
       <Row className="align-items-center">
         <Col xs={12} s={12} md={12} lg={9} xl={9} className="text-center">
           {selectedImage ? (

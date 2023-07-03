@@ -1,21 +1,22 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
-
-import "./Technologies.scss";
 import { LanguageContext } from "../../context/LanguageContext";
+
+//Estilos
+import "./Technologies.scss";
 
 const Technologies = () => {
   const { isEnglish } = useContext(LanguageContext);
   return (
     <section id="technologies" className="p-3">
+      <h1 className="technology-card-title text-center">
+        {" "}
+        {isEnglish
+          ? "Technologies that I use the most: "
+          : "Tecnologias que mayormente uso:"}
+      </h1>
       <Container className="p-4 technology-container">
         <Card className="technology-card">
-          <h2 className="technology-card-title text-center p-2">
-            {" "}
-            {isEnglish
-              ? "Technologies that I use the most: "
-              : "Tecnologias que mayormente uso:"}
-          </h2>
           <Row className="text-center p-3">
             <Col xs={12} sm={4} md={4} lg={4} xl={4} className="mt-2 mb-2">
               <Card className="w-100 h-100 technologies">
@@ -98,14 +99,3 @@ const Technologies = () => {
 };
 
 export default Technologies;
-/* 
-cards
-https://uiverse.io/boryanakrasteva/strong-cat-50
-https://uiverse.io/eslam-hany/nasty-zebra-54
-
-buttons
-https://uiverse.io/mrhyddenn/stale-cheetah-42
-https://uiverse.io/mrhyddenn/moody-badger-62
-https://uiverse.io/zjssun/tidy-sloth-40
-https://uiverse.io/Navarog21/loud-bird-67
-https://uiverse.io/JkHuger/fat-bat-0 */

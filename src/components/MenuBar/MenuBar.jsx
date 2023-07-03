@@ -1,8 +1,10 @@
 import { useContext, useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./MenuBar.scss";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../../context/LanguageContext";
+
+//Estilos
+import "./MenuBar.scss";
 
 const MenuBar = () => {
   const { isEnglish } = useContext(LanguageContext);

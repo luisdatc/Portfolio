@@ -9,9 +9,24 @@
   color: rgba(0, 255, 160, 1);
   border: 1px solid rgba(0, 255, 160, 1);
   font-family: "Roboto Condensed", sans-serif;
-  &:hover{
+  &:hover {
     background: rgba(0, 255, 160, 1);
     color: #122ab3;
     border: 1px solid #122ab3;
   }
+}
+
+.swiper_container {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.swiper-slide {
+  width: 25rem; 
+  position: relative;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
 }

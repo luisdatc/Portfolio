@@ -1,15 +1,20 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow } from "swiper";
 import { Link } from "react-router-dom";
 import { Button, Card } from "react-bootstrap";
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 
+//Estilos de Swiper
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+
+//Estilos propios
 import "./ProjectList.scss";
 
 const ProjectList = ({ projects }) => {
+  const { isEnglish } = useContext(LanguageContext);
+
   return (
     <Swiper
       effect={"coverflow"}
@@ -18,7 +23,7 @@ const ProjectList = ({ projects }) => {
       slidesPerView={"auto"}
       coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 2.5 }}
       pagination={{ el: ".swiper-pagination", clickable: true }}
-      modules={[EffectCoverflow, Pagination, Navigation]}
+      modules={[EffectCoverflow]}
       className="swiper_container"
     >
       {projects.map(({ id, title, image }) => (
@@ -28,7 +33,9 @@ const ProjectList = ({ projects }) => {
             <Card.Body>
               <Card.Title>{title}</Card.Title>
               <Link to={`/detail/${id}`}>
-                <Button className="project-list-card-button">+ Detalles</Button>
+                <Button className="project-list-card-button">
+                  {isEnglish ? "+ Details" : "+ Detalles"}
+                </Button>
               </Link>
             </Card.Body>
           </Card>

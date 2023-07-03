@@ -1,7 +1,8 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { LanguageContext } from "../../context/LanguageContext";
 
+//Estilos
 import "./Profile.scss";
 
 const Profile = () => {

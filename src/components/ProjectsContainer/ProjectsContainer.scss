@@ -1,5 +1,5 @@
 #projects {
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 0;
 }
 
 .heading {
@@ -10,16 +10,3 @@
   color: #00f7e6;
 }
 
-.swiper_container {
-  position: relative;
-}
-
-.swiper-slide {
-  width: 25rem; //se puede modificar
-  position: relative;
-}
-
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
-  display: none;
-}
