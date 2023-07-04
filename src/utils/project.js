@@ -66,7 +66,7 @@ const projects = [
   {
     id: "4",
     title: "Encryptador de Texto",
-    image: "/gamerzone.PNG",
+    image: "/encrypt.PNG",
     technologies: [
       "/iconos/html5.svg",
       "/iconos/css.svg",
@@ -87,7 +87,7 @@ const projects = [
   {
     id: "5",
     title: "Portfolio",
-    image: "/gamerzone.PNG",
+    image: "/portfolio.png",
     technologies: [
       "/iconos/html5.svg",
       "/iconos/css.svg",
@@ -95,11 +95,16 @@ const projects = [
       "/iconos/bootstrap.svg",
       "/iconos/react.png",
     ],
-    description: "algo",
+    description: {
+      spanish:
+        "He creado mi portfolio utilizando React con Vite. En él, he plasmado mi trayecto educacional y los proyectos realizados a lo largo de los diferentes cursos que he completado. El portfolio cuenta con un diseño responsive gracias a la implementación de Bootstrap, lo que garantiza que se adapte a diferentes dispositivos.Para añadir animaciones de scroll, he utilizado AOS Scroll, lo cual proporciona una experiencia más dinámica y atractiva al desplazarse por el sitio. Además, he utilizado React Router DOM para asegurarme de que los detalles de los proyectos (tecnologías utilizadas y una breve descripción) se muestren en una sola página, facilitando la navegación del usuario. En cuanto a los estilos, he utilizado SASS para tener un mayor control y modularidad en la hoja de estilos. Para hacer el contenido más dinámico, he incorporado la librería Swiper, la cual permite crear un slide interactivo de los proyectos. Además, he añadido una funcionalidad para seleccionar el idioma del portfolio mediante un botón. Esto significa que los visitantes pueden elegir entre ver el contenido en inglés o español, lo cual mejora la accesibilidad y la experiencia de usuario.",
+      ingles:
+        "I have created my portfolio using React with Vite. In it, I have showcased my educational journey and the projects I have completed throughout different courses. The portfolio features a responsive design thanks to the implementation of Bootstrap, ensuring adaptability to different devices. To add scroll animations, I have used AOS Scroll, which provides a more dynamic and engaging experience while navigating the site. Additionally, I have utilized React Router DOM to ensure that project details (such as used technologies and a brief description) are displayed on a single page, facilitating user navigation. Regarding styles, I have used SASS for greater control and modularity in the stylesheet. To make the content more dynamic, I have incorporated the Swiper library, which allows for the creation of interactive project slides. Furthermore, I have added functionality to select the language of the portfolio using a button. This means that visitors can choose to view the content in English or Spanish, enhancing accessibility and the user experience.",
+    },
     school: "Personal",
-    date: "Mayo 2023",
-    repository: "algo",
-    url: "algo",
+    date: "Julio 2023",
+    repository: "https://github.com/luisdatc/Portfolio",
+    url: "https://luistorres-portfolio.netlify.app/",
   },
 ];
 

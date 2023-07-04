@@ -14,13 +14,21 @@ const ProjectDetail = ({ project }) => {
       <Card className="card mx-auto project-detail-card">
         <Card.Img variant="top" src={project.image} />
         <Card.Body>
-          <Card.Title>{project.title}</Card.Title>
+          <Card.Title>
+            <h2>{project.title}</h2>
+          </Card.Title>
           <Card.Text>
             {isEnglish
               ? project?.description?.ingles
               : project?.description?.spanish}
           </Card.Text>
-          <Card.Text>{project.date}</Card.Text>
+          <Card.Title>
+            <h4>
+              {isEnglish
+                ? `Finish Date: ${project.date}`
+                : `Fecha de Finalización: ${project.date}`}
+            </h4>
+          </Card.Title>
           <div className="text-center">
             <h3>
               {isEnglish

@@ -15,8 +15,6 @@ const ProjectDetailContainer = () => {
       .catch((err) => console.log(err));
   }, [pid]);
 
-  console.log(pid);
-
   return (
     <>
       <ProjectDetail project={project} />
