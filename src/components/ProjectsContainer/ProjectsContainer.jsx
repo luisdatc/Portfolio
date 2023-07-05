@@ -22,7 +22,7 @@ const ProjectsContainer = () => {
   return (
     <Container id="projects">
       <h1 className="heading text-center">
-        {isEnglish ? "Personal Projects" : "Proyectos Personales"}
+        {isEnglish ? "Projects" : "Proyectos"}
       </h1>
       <>
         <ProjectList projects={projects} />
