@@ -12,8 +12,8 @@ const Technologies = () => {
       <h1 className="technology-card-title text-center">
         {" "}
         {isEnglish
-          ? "Technologies that I use the most: "
-          : "Tecnologias que mayormente uso:"}
+          ? "Technologies that I use the most "
+          : "Tecnologias que mayormente uso"}
       </h1>
       <Container className="p-4 technology-container">
         <Card className="technology-card">
